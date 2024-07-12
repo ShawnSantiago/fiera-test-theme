@@ -1,0 +1,13 @@
+{
+  "frontend/entrypoints/main-collection.js": {
+    "file": "main-collection-CpXIbNwG.js",
+    "name": "main-collection",
+    "src": "frontend/entrypoints/main-collection.js",
+    "isEntry": true
+  },
+  "frontend/entrypoints/main-collection.scss": {
+    "file": "main-collection-m7FFV5V2.css",
+    "src": "frontend/entrypoints/main-collection.scss",
+    "isEntry": true
+  }
+}

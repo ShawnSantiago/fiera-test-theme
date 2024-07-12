@@ -5,7 +5,7 @@ main{
             margin-inline: 8rem;
         }
         &-header{
-            margin-bottom:1rem;
+            margin-bottom:4rem;
             h2{
                 font-size: 2rem;
                 margin-bottom: 1rem;
@@ -33,7 +33,7 @@ main{
             &-grid-container{
                 display: grid;
                 width: 100%;
-                grid-template-columns: repeat(4, minmax(250px, 1fr));
+                grid-template-columns: repeat(4,  1fr);
                 grid-template-rows: 1fr min-content;
                 gap: 2rem;
                 justify-content: center;
@@ -73,6 +73,13 @@ main{
                         font-weight: 600;
                         margin-block: 1rem;
                     }
+                }
+            }
+        }
+        @media screen and (max-width: 999px) {
+            .product {
+                &-grid-container{
+                    grid-template-columns: repeat(3,  1fr);
                 }
             }
         }
