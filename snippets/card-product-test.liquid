@@ -1,0 +1,17 @@
+<product-card-test class="product-card" url="{{ product.url }}">
+  <div class="product-card--media">
+    {{ product.featured_image | image_url: width: 250 | image_tag }}
+  </div>
+  <div class="product-card--content">
+    <div class="product-card--content-title">{{ product.title }}</div>
+    <div class="product-card--content-price">
+      {% if product.variants.size > 1 %}
+        From
+      {% endif %}
+      <span>{{ product.price | money_with_currency }}</span>
+    </div>
+  </div>
+  <noscript>
+    {{ product | json }}
+  </noscript>
+</product-card-test>
